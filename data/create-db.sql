@@ -37,23 +37,23 @@ VALUES
 ('La tour sombre', 'Stephen King','5'),
 ('un(e)secte', 'Maxime Chattam','6'),
 ('De la terre à la lune', 'Jules verne','7'),
-('Une étude en rouge', 'Sir Arthur Conan Doyle','8'),
+('Une étude en rouge', 'Sir Arthur Conan Doyle','8');
 
-INSERT INTO "label" ("title" "color")
+INSERT INTO "label" ("title", "color")
 VALUES
 ('Horreur', 'red'),
 ('Aventure', 'green'),
-('Enquête', 'yellow'),
+('Enquête', 'yellow');
 
 INSERT INTO "book_has_label" ("book_id", "label_id")
 VALUES
 (1,1),
-(1,1),
+(1,2),
 (3,2),
 (4,1),
 (5,1),
 (6,1),
 (7,2),
-(8,3),
+(8,3);
 
 COMMIT;
